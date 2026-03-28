@@ -2,7 +2,7 @@
 
 session_start();
 
-	$conn=mysqli_connect("localhost","root","123456","web_lab");
+	$conn=mysqli_connect("localhost","root","phat0727","web_lab");
 
 	if(isset($_POST['username'])){
 
