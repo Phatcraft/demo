@@ -23,7 +23,7 @@
       $_SESSION['user']=$u;
       echo "<script>alert('Login successful')</script>";
     }else{
-      echo "<script>alert('Wrong password or username. Number of attempts remaining: ".$max_attempts - $SESSION["attempts"]."')</script>";
+      echo "<script>alert('Wrong password or username')</script>";
       $_SESSION["attempt"]++;
     }
 
