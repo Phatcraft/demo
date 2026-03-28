@@ -28,7 +28,7 @@ session_start();
 	}
 
 ?>
-<title>Demo User Enumeration</title>
+<title>Demo User Enumeration & Brute Force</title>
 <style>
 	body{
 		background-color: steelblue;
