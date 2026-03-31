@@ -39,4 +39,40 @@ Sau khi setup xong, mở trang web tại http://localhost/demo/login.php
 
 ## 4. Setup thực hiện Brute Force tại ZAP
 + Tại `Quick Start`, chọn `Automatic Scan` với địa chỉ http://localhost/demo/login.php
-+ Sau khi scan xong, tại phần `Site` chọn vào 
+<img width="1276" height="711" alt="image" src="https://github.com/user-attachments/assets/5f75d247-9ecf-4cb6-a127-3f4de28bbb28" />
+
++ Sau khi scan xong, tại phần `Site` chọn vào URI có phương thức `POST`
+<img width="665" height="417" alt="image" src="https://github.com/user-attachments/assets/80b38d43-0c27-4dd0-acd9-96c8b7ae48d5" /> 
+
++ Chọn chuột phải, chọn `Attack/Fuzz`
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5b8063cd-b0d0-4833-b344-f49a723e817c" />
+
++ Tại trang Fuzzer, bôi đen từ `ZAP` tại username và password để tạo payload -> Sau đó chọn Add để thêm Payload
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/12e4267d-a594-44e0-8fc9-6113872af5a8" />
+
++ Sau đó chon `Add` để thêm nội dung payload
+<img width="854" height="716" alt="image" src="https://github.com/user-attachments/assets/1b944a27-43b1-4afb-82ba-657ab7294f3c" />
+
++ Thêm nội dung payload dạng chuỗi hoặc 1 file tại `Type`
+<img width="735" height="910" alt="image" src="https://github.com/user-attachments/assets/7065ff6e-654d-459f-a6f5-68c004f5fb9d" /><br>
+Nội dung file mẫu:
+*username.txt*
+````
+phatcraft
+admin
+ad123
+````
+*password.txt*
+````
+abcd
+12345
+123456
+````
+
++ Sau khi thêm, nhấn `Start Fuzzer` để thực hiện BruteForce. Kết quả sẽ hiển thị ở phần `Response`
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ca86fe3a-2d33-4010-a5f6-9d086f017b92" />
+
+
+
+
+
